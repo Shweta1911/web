@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function to calculate LCM and GCD</h1>
+    <script>
+        function gcdLcm(num1,num2){
+            for (let i = 1; i <= num1 && i <= num2; i++) {
+
+                if( num1 % i == 0 && num2 % i == 0) {
+                    gcd = i;
+                }
+            }
+            let lcm=(num1*num2)/gcd
+            console.log(`GCD=${gcd}  LCM=${lcm}`)
+        }
+        gcdLcm(18,24)
+
+    </script>
+</body>
+</html>

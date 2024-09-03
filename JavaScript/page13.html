@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myFunction() {
+        const users = {
+          Alex: {
+            email: 'alex@alex.com',
+            skills: ['HTML', 'CSS', 'JavaScript'],
+            age: 20,
+            isLoggedIn: false,
+            points: 30,
+          },
+          Asab: {
+            email: 'asab@asab.com',
+            skills: [
+              'HTML',
+              'CSS',
+              'JavaScript',
+              'Redux',
+              'MongoDB',
+              'Express',
+              'React',
+              'Node',
+            ],
+            age: 25,
+            isLoggedIn: false,
+            points: 50,
+          },
+          Brook: {
+            email: 'daniel@daniel.com',
+            skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+            age: 30,
+            isLoggedIn: true,
+            points: 50,
+          },
+          Daniel: {
+            email: 'daniel@alex.com',
+            skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+            age: 20,
+            isLoggedIn: false,
+            points: 40,
+          },
+          John: {
+            email: 'john@john.com',
+            skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+            age: 20,
+            isLoggedIn: true,
+            points: 50,
+          },
+          Thomas: {
+            email: 'thomas@thomas.com',
+            skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+            age: 20,
+            isLoggedIn: false,
+            points: 40,
+          },
+          Paul: {
+            email: 'paul@paul.com',
+            skills: [
+              'HTML',
+              'CSS',
+              'JavaScript',
+              'MongoDB',
+              'Express',
+              'React',
+              'Node',
+            ],
+            age: 20,
+            isLoggedIn: false,
+            points: 40,
+          },
+        }
+        // const data = users.map((user) => {
+        //   let count = user.values().map((eachuser) => {
+        //     const container = {}
+        //     if (
+        //       eachuser.skills == 'MongoDB' &&
+        //       eachuser.skills == 'Express' &&
+        //       eachuser.skills == 'React' &&
+        //       eachuser.skills == 'Node'
+        //     ) {
+        //       count += 1
+        //       eachuser.email = 'Newemail@gmail.com'
+        //     }
+        //     if (eachuser.age > 20) {
+        //       console.log(eachuser)
+        //     }
+        //     return count
+        //   })
+
+        //   return count
+        // })
+        // console.log(data)
+        let countMain = 0
+        for (let user in users) {
+          obj = users[user]
+          let count = 0
+          for (let skill in obj.skills) {
+            if (
+              obj.skills[skill] == 'MongoDB' ||
+              obj.skills[skill] == 'Node' ||
+              obj.skills[skill] == 'Express' ||
+              obj.skills[skill] == 'React'
+            ) {
+              // console.log(obj.skills[skill])
+              count = count + 1
+            }
+          }
+
+          if (obj.age > 20) {
+            console.log(`Age above 20 is = `, obj)
+          }
+          if (count == 4) {
+            countMain += 1
+            console.log('--------------')
+            console.log(obj)
+            obj.email = 'Newmail@gmail.com'
+            console.log(obj)
+            console.log('--------------')
+          }
+        }
+        console.log(`Total Mern Dev are ${countMain}`)
+      }
+      myFunction()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            color: #ffffff;
+            background-color: red;
+        }
+        .class2{
+            color: #ffffff;
+            background-color: blue;
+        }
+        .class3{
+            color: #ffffff;
+            background-color: green;
+        }
+        table{
+            color: white;
+        }
+        thead > tr{
+            background-color: green;
+        }
+        tbody > tr{
+            background-color: orange;
+        }
+        tfoot > tr{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desendent Selector</h1>
+        <p class="class1">Paragraph1</p>
+        <p class="class1">Paragraph2</p>
+
+    <div class="class2">
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+    </div>
+    <ul class="class3">
+        <li><p>Paragraph1</p></li>
+        <li><p>Paragraph2</p></li>
+    </ul>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>no</th>
+                <th>item name</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>item1</th>
+                <th>100</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>item1</th>
+                <th>100</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>item1</th>
+                <th>100</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">total</th>
+                <th>300</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

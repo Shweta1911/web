@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function to sort alphabates in a string in both orders.
+    </h1>
+
+    <script>
+        function sortAscDes(String1){
+            ascString=String1.split(' ').join('').split('').sort()
+            desString=String1.split(' ').join('').split('').sort().reverse()
+            console.log(`Ascending order is ${ascString}`)
+            console.log(`Descending order is ${desString}`)
+
+        }
+        sortAscDes("my name is shweta")
+    </script>
+</body>
+</html>

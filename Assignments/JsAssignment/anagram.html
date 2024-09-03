@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Anagrams</h1>
+    <script>
+        let flag=1
+        let str1='LISTEN'
+        let str2='SILENT'
+        if(str1.length!=str2.length)
+        flag=0
+        else{
+            
+            arrayStr1=str1.split('').sort()
+            arrayStr2=str2.split('').sort()
+            for(let i=0;i<arrayStr1.length;i++){
+                if(arrayStr1[i]!=arrayStr2[i]){
+                    flag=0
+                    break
+                }
+            }
+            
+        }
+        if(flag==1)
+            console.log("Anagram")
+            else
+            console.log("Not Anagram")
+    </script>
+    
+    </h1>
+</body>
+</html>

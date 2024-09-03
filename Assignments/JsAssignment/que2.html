@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Check if given number is</h1>
+        <ul>
+            <li> prime</li>
+            <li>even</li>
+            <li>odd</li>
+            <li>number</li>
+            <li>alphabate</li>
+            <li>integer</li>
+            <li>decimal</li>
+
+        </ul>
+
+
+    <script>
+        
+        function checkPrime(num){            
+            let flag=1
+            for(let i=2;i<num;i++){
+                if(num%i==0)
+                flag=0
+                break
+            }
+            if(flag==0)
+                console.log("Not Prime")
+            else
+                console.log("Is Prime")
+        }
+        
+        function checkEven(num){
+            if(num%2==0)
+                console.log("Is Even")
+            else
+                console.log("Not Even")
+        }
+        function checkOdd(num){
+            if(num%2!=0)
+                console.log("Is Odd")
+            else
+                console.log("Not Odd")
+    
+        }
+        function isNumber(num){
+            if(isNaN(num)==false)
+            console.log("Is number")
+            else
+            console.log("Not a Number")
+        }
+
+        function isInt(num){
+            if(Number.isInteger(num)==true)
+            console.log("Is Integer")
+            else
+            console.log("Not a Integer")
+        }
+        function isDecimal(num){
+            if(Number.isInteger(num)==false)
+            console.log("Is Decimal")
+            else
+            console.log("Not a Decimal")
+        }
+        const num=prompt("Enter the number")
+        checkPrime()
+        checkEven()
+        checkOdd()
+        isNumber()
+        isInt()
+        isDecimal()
+    </script>
+
+</body>
+</html>

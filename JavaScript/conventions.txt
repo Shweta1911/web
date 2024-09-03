@@ -1,0 +1,5 @@
+identifiers-
+    must not use any special character
+    always use camel convention
+    must not start identifier name with a number
+    always prefer use immutable over mutable

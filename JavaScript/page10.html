@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <script>
+        //Object collection of properties(keys) and methods
+        function demo(){
+            const person={
+                name:'Person',
+                address:{
+                    city:'Miraj',
+                    state:'Maharashtra',
+                    country:'India',
+                    zipcode:416410
+                },
+                languages:['Cpp','Java','Js'],
+                canVote:true
+            }
+
+            console.log(person)
+            person['name']="Shweta"
+            person.canVote=false
+            console.log(person.name)
+            console.log(person['canVote'])
+            console.log(Object.keys(person))//get all keys of object
+
+            const persons=[
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+            ]
+
+            const mobile=[
+                {model:'GalaxyF41',company:'Samsung',price:'15000',confi:{cpu:'123',gpu:'123'},},
+                {model:'Iphone 15',company:'Apple',price:'50000',confi:{cpu:'123',gpu:'123'},},
+                {model:'AsusROG',company:'ASUS',price:'75000',confi:{cpu:'123',gpu:'123'},},
+                    {model:'Nothing1',company:'Nothing',price:'15000',confi:{cpu:'123',gpu:'123'},},
+                    {model:'OnePlus5',company:'OnePlus',price:'15000',confi:{cpu:'123',gpu:'123'},}
+                ]
+
+                console.log(mobile)
+    }
+
+            function myfun(){
+                const persons=[
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+                {name:'Person1',address:'Pune',phone:'23304343',age:21},
+            ]
+
+            const result2=persons.map((values)=>{
+                result2.push(persons.name)
+                result2.push(persons.name)
+            })
+        }
+            function myFun2(){
+                const mobile=[
+                {model:'GalaxyF41',company:'Samsung',price:'15000',confi:{cpu:'123',gpu:'123'},},
+                {model:'Iphone 15',company:'Apple',price:'50000',confi:{cpu:'123',gpu:'123'},},
+                {model:'AsusROG',company:'ASUS',price:'75000',confi:{cpu:'123',gpu:'123'},},
+                {model:'Nothing1',company:'Nothing',price:'15000',confi:{cpu:'123',gpu:'123'},},
+                {model:'OnePlus5',company:'OnePlus',price:'15000',confi:{cpu:'123',gpu:'123'},}
+                ]
+
+                const result=mobile.map((value)=>{                    
+                    return {model:value.model,price:value.price}
+                })
+                console.log(result)
+            }
+          //  myFun2()
+            function function1(){
+                const numbers=[1,2,3,4,5,6,7,8,9,10]
+                const even=numbers.filter((value)=>{
+                    if (value%2==0){
+                        return value
+                    }
+                })
+
+                const even1=numbers.filter((value)=>{
+                    return value%2==0
+                })
+                const odd=numbers.filter((value)=>{
+                    return value%2!=0
+                })
+                console.log(even)
+                console.log(even1)
+                console.log(odd)
+
+
+            }
+           // function1()
+
+           function function2(){
+            const marks=[20,25,34,38,49,37,10,3,5,18]
+            const passed=marks.filter((value)=>{
+                return value>=35
+            })
+            const fail=marks.filter((value)=>{
+                return value<35
+            })
+            console.log(passed)
+            console.log(fail)
+           }
+          // function2()
+          function function3(){
+            const mobile=[
+                {model:'GalaxyF41',company:'Samsung',price:'15000',confi:{cpu:'123',gpu:'123'},},
+                {model:'Iphone 15',company:'Apple',price:'60000',confi:{cpu:'snapdragon',gpu:'123'},},
+                {model:'AsusROG',company:'ASUS',price:'75000',confi:{cpu:'123',gpu:'123'},},
+                {model:'Nothing1',company:'Nothing',price:'25000',confi:{cpu:'snapdragon',gpu:'123'},},
+                {model:'OnePlus5',company:'OnePlus',price:'45000',confi:{cpu:'snapdragon',gpu:'123'},}
+                ]
+
+                const affordable=mobile.filter((value)=>{
+                    return value.price<=50000
+                })
+                const processor=mobile.filter((value)=>{
+                    return value.confi.cpu=='snapdragon'
+                })
+                console.log(mobile.filter((value)=>{
+                    return value.price<=50000
+                }))
+                console.log(mobile.filter((value)=>{
+                    return value.confi.cpu=='snapdragon'
+                }))
+
+                console.log(affordable)
+                console.log(processor)
+          }
+          function3()
+
+    </script>
+    
+</body>
+</html>

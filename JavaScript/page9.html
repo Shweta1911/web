@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map function demo</h1>
+    <script>
+        function function1(){
+            const num=[1,2,3,4,5,6,7,8,9]
+            let squares=[]
+            for(const i of num){
+                squares.push(i*i)
+            }
+            console.log(squares)
+        }
+       // function1()
+
+        function function3(){
+            const num=[1,2,3,4,5,6,7,8,9]
+            const squ=num.map((value)=>{
+                return value**2
+            })
+            console.log(num)
+            console.log(squ)
+        }
+        function3()
+        function function4(){
+            const num=[33,34,32,30,29,28]
+            const CtoF=num.map((value)=>{
+                return (9/5*value)+32
+            })
+            console.log(num)
+            console.log(CtoF)
+        }
+        function4()
+
+        function function5(){
+            const num=[1,2,3,4,5,6,7,8,9]
+            const cube=num.map((value)=>{
+                return value**3
+            })
+            console.log(num)
+            console.log(cube)
+        }
+        function5()
+
+    </script>
+</body>
+</html>

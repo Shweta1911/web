@@ -1,0 +1,56 @@
+.div1{
+
+    width: 800px;
+    border : 1px solid black; 
+    margin-left: 400px;
+    margin-top: 10px;
+    background-color: rgb(252, 240, 240);
+    border-radius: 10 px;
+    opacity: 0.5;
+}
+.div2{
+    position: absolute;
+    width: 800px;
+    border : 1px solid black; 
+    margin-left: 1300px;
+    top: 220px;
+    background-color: rgb(252, 240, 240);
+    border-radius: 10 px;
+}
+.div3{
+    position: absolute;
+    width: 800px;
+    border : 1px solid black; 
+    margin-left: 1300px;
+    top: 765px;
+    background-color: rgb(252, 240, 240);
+    border-radius: 10 px;
+}
+.font{
+    color: black;
+    font-family: cursive;
+}
+.centre{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h1{
+    text-align: center;
+    size: 50px;
+}
+body {
+    background-image: url('images/breakfastpastryplatter.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.titlee{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: hsl(61, 100%, 49%);
+}

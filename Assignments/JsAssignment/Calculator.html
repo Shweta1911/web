@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create simple calculator to perform mathematical operations.</h1>
+    <script>
+
+        function add(num1,num2){
+            return num1+num2
+        }
+        function sub(num1,num2){
+            return num1-num2
+        }
+        function mul(num1,num2){
+            return num1*num2
+        }
+        function div(num1,num2){
+            return num1/num2
+        }
+        
+            console.log(`Enter Choice`)
+            console.log(`1.Addition`)
+            console.log(`2.Subtraction`)
+            console.log(`3.Multiplication`)
+            console.log(`4.Division`)
+            console.log(`5. Exit`)
+
+        while(true){
+            
+            
+            let choice=parseInt(prompt("Enter the choice"))
+            console.log(`${typeof choice}`)
+            switch(choice){
+                case 1:{
+                    console.log(add(10,20))
+                    break
+                }
+                case 2:{
+                    console.log(sub(10,20))
+                    break
+                }
+                case 3:{
+                    console.log(mul(10,20))
+                    break
+                }
+                case 4:{
+                    console.log(div(20,20))
+                    break
+                }
+                case 5:{
+                    exit(0)
+                }
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>

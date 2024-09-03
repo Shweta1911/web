@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Given a string reverse each word in the sentence</h1>
+    <script>
+        const str='Welcome to this Javascript'
+        const words=str.split(" ")
+        let revWords=[]
+        for(const word of words){
+            let rev=''
+            for(let i=0;i<word.length;i++){
+                rev=word.charAt(i)+rev
+            }
+            revWords.push(rev)
+        }
+        console.log(revWords.join(" "))
+    </script>
+</body>
+</html>

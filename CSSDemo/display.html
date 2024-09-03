@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+
+            background-color: red;
+            margin: 5px;
+            color: aliceblue;
+            font-size: 50px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+        }
+        .type1{
+            display: inline;
+            /*Width and height will be ignored*/
+        }
+        .type2{
+            display: inline-block;
+            /*Width and height will not ignored*/
+        }
+        .type3{
+            display: none;
+            /* hides the elements */
+        }
+    </style>
+</head>
+<body>
+    <h1>display prop</h1>
+    <div class="type1">1</div>
+    <div class="type1">2</div>
+    <div class="type1">3</div>
+    <div class="type1">4</div>
+    <div class="type1">5</div>
+    <br><hr><br>
+    <div class="type2">1</div>
+    <div class="type2">2</div>
+    <div class="type2">3</div>
+    <div class="type2">4</div>
+    <div class="type2">5</div>
+    <br><hr><br>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <br><hr><br>
+    <div class="type3">1</div>
+    <div class="type3">2</div>
+    <div class="type3">3</div>
+    <div class="type3">4</div>
+    <div class="type3">5</div>
+</body>
+</html>

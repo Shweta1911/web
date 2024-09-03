@@ -1,0 +1,142 @@
+.imgbg{
+    width: 1263px;
+    height: 450px;
+}
+body{
+    margin: 0;
+}
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.logopos{
+    position: absolute;
+    left: 450px;
+    top: 100px;
+}
+h2{
+    color:rgb(184, 48, 48);
+    text-align: center;
+
+}
+h3{
+    color: rgb(184, 48, 48);
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    text-align: centre;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    border: 1px solid #646464;
+    border-radius: 8px;
+    top: 10px;
+    margin-left: 80px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card1 {
+    width: 300px;
+    border: 1px solid #646464;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card2 {
+    width: 250px;
+    border: 1px solid #646464;
+    border-radius: 8px;
+    padding: 30px;
+    margin-left: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card3 {
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    border: 1px solid #646464;
+    border-radius: 8px;
+    top: 10px;
+    margin-left: 120px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;}
+h1{
+    text-align: center;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(font/Oswald-VariableFont_wght.ttf);
+}
+
+*{
+font-family: Oswald;
+}
+
+.imgnew{
+    margin-top: 50px;
+    margin-left: 180px;
+    height: 400px;
+    width:350px;
+}
+
+.imgnew1{
+    margin-top: 50px;
+    margin-left: 80px;
+    height: 400px;
+    width: 650px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: rgb(20, 20, 90);
+}
+.menu ul{
+    list-style:none;
+    padding: 0;
+    text-align: center;
+
+}
+.menu li{
+    display: inline-block;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    
+    
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button{
+    height: 40px;
+    width: 80px;
+    background-color:  rgb(20, 20, 90);
+    color: aliceblue;
+    border-style: none;
+    border-radius: 10px;
+}

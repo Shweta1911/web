@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function to replace all occurrences of a string.</h1>
+    <script>
+        function replaceOcc(string1,word,replaceW){
+            words=string1.split(" ")
+            for(let i in words){
+                if(words[i]==word){
+                    words.splice(i,1,replaceW)
+                }
+            }
+
+            console.log(`String after = ${words.join(' ')}`)
+        }
+        replaceOcc("Hi hello I am hello","hello","newWord")
+    </script>
+</body>
+</html>

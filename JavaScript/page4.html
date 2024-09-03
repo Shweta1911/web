@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Iteration demo</h1>
+    <script>
+        const arrays=[12,33,21,45,23,93]
+        //traditional for loop
+        for(let i=0;i<arrays.length;i++){
+            console.log(`value of index ${i} = ${arrays[i]}`)
+        }
+        console.log("_")
+
+        //for in loop (accessing values using index pos)
+        for(const i in arrays){
+            console.log(`value of index ${i} = ${arrays[i]}`)
+        }
+        console.log("_")
+        //for of loop (accessing values without index)
+        for(const i of arrays){
+            console.log(`value is ${i}`)
+        }
+
+        //for each
+    </script>
+    
+</body>
+</html>

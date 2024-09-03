@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>anonymous function</h1>
+    <script>
+        // const function2=function(){
+        //     console.log("Hello World")
+        // }
+        // function2()
+        // const function3=()=>{
+        //     console.log("Arrow function")
+        // }
+        // function3()
+
+
+        //Function Reference
+
+        function add(a,b){
+            console.log(`Addition is ${a+b}`)
+        }
+        function sub(a,b){
+            console.log(`Subtraction is ${a-b}`)
+        }
+        const mul=(a,b)=>{
+            console.log(`Multiplication is ${a*b}`)
+        }
+
+        function performOperation(func){
+            func(10,20)
+            func(30,20)
+            func(40,20)
+            func(50,20)
+            func(60,20)
+        }
+        performOperation(add)
+        performOperation(sub)
+        performOperation((a,b)=>{
+            console.log(`Multiplication is ${a*b}`)
+        })
+
+    </script>
+</body>
+</html>

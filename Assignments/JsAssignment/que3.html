@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Implment stack with functionality: push, pop, isEmpty, isFull, length</h1>
+    <script>
+        let stack=[] 
+        let top1=-1      
+        function pushEle(num){
+            top1++
+            stack.push(num)
+        }
+        function popEle(){
+            stack.pop()
+            top1--
+        }
+        function isEmpty(){
+            if(stack.length==0)
+            console.log("Is empty")
+            else
+            console.log("Not empty")
+        }
+        function isFull(){
+            if(stack.length==5)
+            console.log("Is Full")
+            else
+            console.log("Not Full")
+        }
+        function stackLen(){
+            console.log(`Length of the string is ${stack.length}`)
+        }
+
+        while(true){
+            console.log(`Enter Choice`)
+            console.log(`1.Push`)
+            console.log(`2.Pop`)
+            console.log(`3.Len`)
+            console.log(`4.Is Empty`)
+            console.log(`5. Is Full`)
+            console.log(`6. Exit`)
+
+            
+            let choice=parseInt(prompt("Enter the choice"))
+            console.log(`${typeof choice}`)
+            switch(choice){
+                case 1:{
+                    let ele=prompt("Enter num")
+                    pushEle(ele)
+                    break
+                }
+                case 2:{
+                    popEle()
+                    break
+                }
+                case 3:{
+                    stackLen()
+                    break
+                }
+                case 4:{
+                    isEmpty()
+                    break
+                }
+                case 5:{
+                    isFull()
+                    break
+                }
+                case 6:{
+                    exit(0)
+                }
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        function demo
+    </h1>
+
+    <script>
+        // function myfuction(){
+        //     console.log("Hello World")
+        // }
+        // myfuction()
+
+        // function function1(param){//Accepts all type of parameters
+        //     console.log(param)
+        // }
+        // function1("Shweta")
+        // function1(112)
+        // function1([1,2,3,4,5])
+
+        // function myfuction(a,b,c){
+        //     console.log(a+b+c)
+        // }
+        // myfuction(10,20,30)
+        // myfuction('10',20,30)
+        // myfuction(10,'20',30)
+        // myfuction(10,20,'30')
+        // myfuction('10','20','30')
+
+        // function add(a,b){
+        //     return a+b
+        // }
+        // console.log(add(10,20))
+
+        // function myfuction(p1,p2){
+        //     let sum=0
+        //     for(const i of arguments){
+        //         sum+=i
+        //     }
+        //     console.log(sum)
+        // }
+
+        // myfuction(10)
+        // myfuction(10,20,30)
+        // myfuction(10,20,30,40)
+
+        // function myfuction(p,n,r){
+        //     const interest=(p*n*r)/100
+        //     console.log(`Simple interest is ${interest}`)
+
+        // }
+        // myfuction(100000,10,8.5)
+
+        function compoundInterest(p,n,t,r){
+            const ci=p*(((1+(r/n))**(n*t))-1)
+            console.log(ci)
+        }
+        function celsiusFahrenheit(c){
+            const f = (9/5*c)+32.
+            console.log(f)
+        }
+
+        compoundInterest(10000,2,2,8.5)
+        celsiusFahrenheit(100)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variables Demo</h1>
+    <script>
+        //Datatype are inferred in js
+        let num=100;//Declare variable,by using let the value can be redeclared
+        console.log(num);
+        console.log('Number= '+num);//Typecasting to string
+        console.log('Number= ',num);//uses its own data type
+        console.log(`Number =${num}`);//String interpolation
+        console.log(`type of no is ${typeof num}`);
+
+        console.log(`Num=${num}, datatype is ${typeof num}`);
+
+        let sal=12.5;
+        console.log(`Num=${sal}, datatype is ${typeof sal}`);
+
+        let firstname='Shweta';
+        let lastame="Kamble";
+        console.log(`Name=${firstname}, datatype is ${typeof firstname}`);
+        console.log(`Name=${lastame}, datatype is ${typeof lastame}`);
+
+        // for single line strigs can be declared by "" and '' and for double line ``
+
+        let address=`ndskd
+        akdla
+        dadmk
+        dlmd`;
+
+        let canvote=true;
+        console.log(`Vote=${canvote}, datatype is ${typeof canvote}`);
+
+        let var1;//var can be undefined for 1.when initial value is not defined or is declared using undefined keyword
+        console.log(`var=${var1}, datatype is ${typeof var1}`);
+        
+        let var2=null;
+        console.log(`var=${var2}, datatype is ${typeof var2}`);
+
+
+        //Constants(Immutable) declared using const keyword
+        //Cannot be declared without initial value
+        const num1=100;
+        console.log(`const=${num1}, datatype is ${typeof num1}`);
+        const bool=false;
+        console.log(`const=${bool}, datatype is ${typeof bool}`);
+        const undef=undefined;
+        console.log(`const=${undef}, datatype is ${typeof undef}`);
+        const null1=null;
+        console.log(`const=${null1}, datatype is ${typeof null1}`);
+
+
+        //js is dynamically linked language
+        let num2=100;
+        console.log(`Number=${num2}, datatype is ${typeof num2}`);
+        num2=200;
+        console.log(`Number=${num2}, datatype is ${typeof num2}`);
+        num2='test';
+        console.log(`Number=${num2}, datatype is ${typeof num2}`);
+
+        let a=100;
+        let b=200;
+        console.log(`${a} + ${b} = ${a+b}`);
+        b="300"
+        console.log(`${a} + ${b} = ${a+b}`);
+
+
+        //Collections (Collection of similar or dissimilar values)
+        //types= array,set
+        const numbers=[1,2,3,4,5]
+        console.log(numbers);
+
+        const canvotes=[true,false,false,true]
+        console.log(canvotes)
+
+
+        const hetro=[1,'one',3,'adam',true,undefined,null]
+        console.log(hetro)
+        console.log(`Number=${hetro}, datatype is ${typeof hetro}`);
+
+        
+    </script>
+</body>
+</html>

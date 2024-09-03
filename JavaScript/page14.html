@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const demo = async () => {
+      //     let y = await 'Hello world'
+      //     console.log(y)
+      //   }
+      //   console.log('1')
+      //   demo()
+      //   console.log('2')
+
+      function asyncdemo1() {
+        let first_promise = new Promise((resolve, reject) =>
+          resolve('First Promise')
+        )
+        async function display() {
+          const val1 = await first_promise
+          console.log(val1)
+        }
+        display()
+      }
+      function asyncdemo2() {
+        let second_promise = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(' Second Promise ')
+          }, 5000)
+        })
+        async function display() {
+          const val1 = await second_promise
+          console.log(val1)
+        }
+        display()
+      }
+      //   asyncdemo1()
+      //   asyncdemo2()
+      //   console.log('3')
+      function sum(x, y, z) {
+        return x + y + z
+      }
+
+      //   const numbers = [1, 2, 3]
+
+      //   console.log(sum(...numbers))
+      //   console.log(numbers)
+      //   console.log(...numbers)
+
+      const numbers = [1, 2, 3, 4, 5]
+
+      const sum1 = numbers.reduce(
+        (accumulator, currentValue) => accumulator * currentValue
+      )
+
+      console.log(sum1)
+    </script>
+  </body>
+</html>

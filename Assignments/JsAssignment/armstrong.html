@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Write a function to check amstrong number.
+    </h1>
+    <script>
+        function armstrong(num){
+            let temp=num
+            let sum=0
+            while(num>0){
+                let d=parseInt(num%10)
+                sum=sum+(d*d*d)
+                num=parseInt(num/10)
+            }
+            if(sum==temp)
+            console.log("Armstrong")
+            else
+            console.log("Not armstrong")
+        }
+
+        armstrong(153)
+        armstrong(152)
+    </script>
+</body>
+</html>
